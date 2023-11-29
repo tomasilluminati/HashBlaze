@@ -25,6 +25,8 @@ To utilize HashGen, follow these steps:
    python3 hashgen.py [--calculate | --id-hash | --compare | --encrypt | --decrypt] [--file FILE] [--dir DIRECTORY] [-oN EXPORT] [--hash HASH] [--algorithm ALGORITHM] [--block-size BLOCK_SIZE] [-p NUM_PROCESSES] [--wordlist WORDLIST] [--string STRING] [-h1 HASH1] [-h2 HASH2]
    ```
 
+3. Adjust the tool's settings to suit your needs and initiate the process.
+
 ## Command Line Arguments
 
 - `--calculate`: Enter Calculation Mode.
@@ -58,8 +60,6 @@ To utilize HashGen, follow these steps:
 ### Options for Encryption 
 
 - `--string STRING`: String to encrypt.
-
-3. Adjust the tool's settings to suit your needs and initiate the process.
 
 ## Features
 
