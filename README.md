@@ -40,19 +40,22 @@ To utilize HashGen, follow these steps:
 - `-oN EXPORT`: Export the file (Name with extension).
 - `--hash HASH`: Hash to analyze.
 - `--algorithm ALGORITHM`: Hash algorithm to use (Default SHA256).
+
+### Options for Calculate
+
 - `--block-size BLOCK_SIZE`: Block Size.
-
-### Options for Decryption
-
-- `-p NUM_PROCESSES`: Number of processes for decryption.
-- `--wordlist WORDLIST`: Path to the wordlist (Only .txt).
 
 ### Options for Comparison
 
 - `--h1 HASH1`: Hash 1 for comparison.
 - `--h2 HASH2`: Hash 2 for comparison.
 
-### Options for Encryption and Decryption
+### Options for Decryption
+
+- `-p NUM_PROCESSES`: Number of processes for decryption.
+- `--wordlist WORDLIST`: Path to the wordlist (Only .txt).
+
+### Options for Encryption 
 
 - `--string STRING`: String to encrypt.
 
