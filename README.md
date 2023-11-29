@@ -1,10 +1,10 @@
-# HashGen - Hash Toolkit
+# HashBlaze - Hash Toolkit
 
 ![GitHub License](https://img.shields.io/badge/License-MIT-green) ![FuzzX Tool](https://img.shields.io/badge/Tool-Hash_Toolkit-blue)
 
 ## Overview
 
-HashGen is a powerful command-line tool designed for a variety of hashing-related tasks. Whether you need to calculate hash values, identify hashes, compare hashes, or engage in encryption and decryption operations, HashGen has you covered.
+HashBlaze is a powerful command-line tool designed for a variety of hashing-related tasks. Whether you need to calculate hash values, identify hashes, compare hashes, or engage in encryption and decryption operations, HashBlaze has you covered.
 
 ## Table of Contents
 
@@ -15,14 +15,14 @@ HashGen is a powerful command-line tool designed for a variety of hashing-relate
 
 ## Usage
 
-To utilize HashGen, follow these steps:
+To utilize HashBlaze, follow these steps:
 
 1. Clone this repository to your local machine.
 
 2. Run the tool using the following command:
 
    ```bash
-   python3 hashgen.py [--calculate | --id-hash | --compare | --encrypt | --decrypt] [--file FILE] [--dir DIRECTORY] [-oN EXPORT] [--hash HASH] [--algorithm ALGORITHM] [--block-size BLOCK_SIZE] [-p NUM_PROCESSES] [--wordlist WORDLIST] [--string STRING] [-h1 HASH1] [-h2 HASH2]
+   python3 hashblaze.py [--calculate | --id-hash | --compare | --encrypt | --decrypt] [--file FILE] [--dir DIRECTORY] [-oN EXPORT] [--hash HASH] [--algorithm ALGORITHM] [--block-size BLOCK_SIZE] [-p NUM_PROCESSES] [--wordlist WORDLIST] [--string STRING] [-h1 HASH1] [-h2 HASH2]
    ```
 
 3. Adjust the tool's settings to suit your needs and initiate the process.
@@ -97,4 +97,4 @@ By using this program, you acknowledge and accept this disclaimer of liability.
 
 *This project is licensed under the [MIT License](LICENSE).*
 
-*Visit our GitHub repository: [HashGen](https://github.com/tomasilluminati/HashGen)*
+*Visit our GitHub repository: [HashBlaze](https://github.com/tomasilluminati/HashBlaze)*
