@@ -222,6 +222,7 @@ def main(calculate, id_hash, compare, decrypt, encrypt, file, directory, export,
                     print(colorize_text("\nDATE:", "cyan", "bold")+colorize_text(f" {formatted_date_time}", "yellow"))
                     print(colorize_text("\nHASH:", "cyan", "bold")+colorize_text(f" {hash}", "yellow"))
                     print(colorize_text("\nALGORITHM:", "cyan", "bold")+colorize_text(f" {hash_id.upper()}", "yellow"))
+                    separator("cyan")
                     with open(f"{export_path}", "w") as export_file:
                             
                         export_file.write("##############################")
@@ -238,6 +239,7 @@ def main(calculate, id_hash, compare, decrypt, encrypt, file, directory, export,
                     print(colorize_text("\nDATE:", "cyan", "bold")+colorize_text(f" {formatted_date_time}", "yellow"))
                     print(colorize_text("\nHASH:", "cyan", "bold")+colorize_text(f" {hash}", "yellow"))
                     print(colorize_text("\nALGORITHM:", "cyan", "bold")+colorize_text(f" {hash_id.upper()}", "yellow"))
+                    separator("cyan")
 
         elif hash == None and file != None:        
             
@@ -285,6 +287,7 @@ def main(calculate, id_hash, compare, decrypt, encrypt, file, directory, export,
                         
                         print(colorize_text("\nHASH:", "cyan", "bold")+colorize_text(f" {hash}", "yellow"))
                         print(colorize_text("\nTYPE:", "cyan", "bold")+colorize_text(f" {hash_id.upper()}", "yellow"))
+                        
 
                 except:
                     print(colorize_text("Error: Invalid input file", "red"))
