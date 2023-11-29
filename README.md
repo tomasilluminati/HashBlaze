@@ -55,7 +55,7 @@ To utilize HashBlaze, follow these steps:
 ### Options for Decryption
 
 - `-p`: Number of processes for decryption (Default 3).
-- `--wordlist`: Path to the wordlist (Only .txt).
+- `--wordlist`: Path to the wordlist (Only .txt files).
 
 ### Options for Encryption 
 
