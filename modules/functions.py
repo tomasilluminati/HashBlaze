@@ -2,7 +2,7 @@ import hashlib
 from modules.style_and_banners import *
 from sys import exit as syexit
 from os import path, walk
-from re import compile
+from re import compile, match
 
 # Function to calculate the hash of a file
 def calculate_file_hash(path, algorithm, block_size):
