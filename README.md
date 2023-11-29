@@ -37,29 +37,29 @@ To utilize HashGen, follow these steps:
 
 ### Common Options
 
-- `--file FILE`: Path to the file.
-- `--dir DIRECTORY`: Path to the directory.
-- `-oN EXPORT`: Export the file (Name with extension).
-- `--hash HASH`: Hash to analyze.
-- `--algorithm ALGORITHM`: Hash algorithm to use (Default SHA256).
+- `--file`: Path to the file.
+- `--dir`: Path to the directory.
+- `-oN`: Export the file (Name with extension).
+- `--hash`: Hash to analyze.
+- `--algorithm`: Hash algorithm to use (Default SHA256).
 
 ### Options for Calculate
 
-- `--block-size BLOCK_SIZE`: Block Size.
+- `--block-size`: Block Size.
 
 ### Options for Comparison
 
-- `--h1 HASH1`: Hash 1 for comparison.
-- `--h2 HASH2`: Hash 2 for comparison.
+- `--h1`: Hash 1 for comparison.
+- `--h2`: Hash 2 for comparison.
 
 ### Options for Decryption
 
-- `-p NUM_PROCESSES`: Number of processes for decryption.
-- `--wordlist WORDLIST`: Path to the wordlist (Only .txt).
+- `-p`: Number of processes for decryption.
+- `--wordlist`: Path to the wordlist (Only .txt).
 
 ### Options for Encryption 
 
-- `--string STRING`: String to encrypt.
+- `--string`: String to encrypt.
 
 ## Features
 
