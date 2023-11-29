@@ -10,7 +10,7 @@ from sys import exit as syexit
 
 
 # Main Fuction
-def main(calculate, id_hash, compare, decrypt, encrypt, file, directory, export, hash, algorithm, block_size, wordlist, h1, h2, num_p, string):
+def main(calculate, id_hash, compare, decrypt, encrypt, file, directory, export, hash, algorithm, block_size, wordlist, h1, h2, num_p, string, algorithm_list):
     
     current_date_time = datetime.now()
     formatted_date_time = current_date_time.strftime("%Y-%m-%d %H:%M:%S")
@@ -605,6 +605,20 @@ def main(calculate, id_hash, compare, decrypt, encrypt, file, directory, export,
             print(colorize_text("Error: --encrypt need only --file or --string, not both", "red"))
             syexit()
 
+    elif algorithm_list:
+
+        init_banner()
+        print(colorize_text("\nALGORITHMS ALLOWED:", "cyan", "bold"))
+        print(colorize_text("\n                      [-] MD5", "green", "bold"))
+        print(colorize_text("\n                      [-] SHA1", "green", "bold"))
+        print(colorize_text("\n                      [-] SHA224", "green", "bold"))
+        print(colorize_text("\n                      [-] SHA256", "green", "bold"))
+        print(colorize_text("\n                      [-] SHA384", "green", "bold"))
+        print(colorize_text("\n                      [-] SHA512", "green", "bold"))
+        separator("cyan")
+        syexit()
+
+
 if __name__ == "__main__":
 # Parse command line arguments
     parser = argparse.ArgumentParser(description="HashGen - Hash Toolkit")
@@ -616,6 +630,7 @@ if __name__ == "__main__":
     group_main.add_argument('--compare', action='store_true', help="Compare Mode")
     group_main.add_argument('--encrypt', action='store_true', help="Decrypt Mode")
     group_main.add_argument('--decrypt', action='store_true', help="Decrypt Mode")
+    group_main.add_argument('--algorithm-list', action='store_true', help="Show a list of allowed algorithms")
 
 
     parser.add_argument("--file", required=False, help="Path to the file", type=str)
@@ -648,6 +663,7 @@ if __name__ == "__main__":
     compare = args.compare
     encrypt = args.encrypt
     decrypt = args.decrypt
+    algorithm_list = args.algorithm_list
 
 
     file = args.file
@@ -669,4 +685,4 @@ if __name__ == "__main__":
 
     
  # Call the main function with extracted arguments
-    main(calculate, id_hash, compare, decrypt, encrypt, file, directory, export, hash, algorithm, block_size, wordlist, h1, h2, num_p, string)
+    main(calculate, id_hash, compare, decrypt, encrypt, file, directory, export, hash, algorithm, block_size, wordlist, h1, h2, num_p, string, algorithm_list)
