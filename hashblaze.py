@@ -3,7 +3,6 @@ from modules.functions import *
 from modules.functions_2 import *
 from modules.style_and_banners import *
 from os import getcwd
-from re import match, compile
 from datetime import datetime
 from sys import exit as syexit
 
@@ -343,6 +342,7 @@ def main(calculate, id_hash, compare, decrypt, encrypt, file, directory, export,
                     print(colorize_text("\nHASH 1:", "cyan", "bold")+colorize_text(f" {h1}", "green"))
                     print(colorize_text("\nHASH 2:", "cyan", "bold")+colorize_text(f" {h2}", "green"))
                     print(colorize_text("\nRESULT:", "cyan", "bold")+colorize_text(f" MATCH", "green", "bold"))
+                    separator("cyan")
                 
                 else:
 
@@ -358,6 +358,7 @@ def main(calculate, id_hash, compare, decrypt, encrypt, file, directory, export,
 
                     print(colorize_text("\nMARKED HASH 1:", "cyan", "bold") + colorize_text(f" {marked_h1}", "yellow"))
                     print(colorize_text("\nMARKED HASH 2:", "cyan", "bold") + colorize_text(f" {marked_h2}", "yellow"))
+                    separator("cyan")
 
     elif decrypt:
 
