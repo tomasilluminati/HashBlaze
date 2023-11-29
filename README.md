@@ -1,0 +1,2 @@
+# HashGen
+A Hash Toolkit
