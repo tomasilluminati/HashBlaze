@@ -65,23 +65,38 @@ To utilize HashBlaze, follow these steps:
 
 **1. Calculation Mode**
 
-Calculate hash values for files using various algorithms. Specify the file path using the --file option.
+Calculate hash values for files using various algorithms. Specify the file path using the --file option, or the directory path using --dir, you can also select whether you want the type of algorithm (--algorithm) to calculate and you can export the result of the file or files with - -oN
+
+Example:
+- `python3 hashblaze.py --calculate --file ./myfile.txt --algorithm sha256 -oN export.txt | python3 hashblaze.py --calculate --dir ./my/path/to/dir/`
 
 **2. Identification Mode**
 
-Identify the hash algorithm used for a given hash. Provide the hash value using the --hash option.
+Identify the hashing algorithm used for a given hash. Provide the hash value using the --hash option or the --file option to parse a text file. You can export the file with --oN
+
+Example:
+- `python3 hashblaze.py --id-hash --hash b10a8db164e0754105b7a99be72e3fe5 | python3 hashblaze.py --id-hash --file ./myfile.txt -oN export.txt`
 
 **3. Compare Mode**
 
-Compare two hash values to check for similarity. Use the --h1 and --h2 options to provide the hash values for comparison.
+Compare two hash values to check similarity. Use the --h1 and --h2 options to provide hash values for comparison. --oN is not implemented for --compare
+
+Example:
+- `python3 hashblaze.py --compare -h1 b10a8db164e0754105b7a99be72e3fe5 --h2 b10a8db164e0754105b7a99be72e3fe5`
 
 **4. Encrypt Mode**
 
-Encrypt a string using an unspecified encryption algorithm. Input the string using the --string option.
+Encrypt a string using an unspecified encryption algorithm. Enter the string using the --string option or the --file option to allow encryption of all lines of a .txt file. In addition, the type of algorithm with which it will be encrypted must be specified. You can then export the result with --oN
+
+Example:
+- `python3 hashblaze.py --encrypt --string "Hello World" --algorithm sha256 | python3 hashblaze.py --encrypt --file ./myfile.txt --algorithm sha256 -oN export.txt`
 
 **5. Decrypt Mode**
 
-Decrypt a hash using multiple processes and a specified wordlist. Utilize the -p option to set the number of processes. Specify the wordlist file using the --wordlist option.
+Crack a hash using multiple processes and a specific word list. Use the -p option to set the number of processes (Default 3). Specify the wordlist file using the --wordlist option. Then specify a --hash to decrypt. Finally you can export the result with --oN
+
+Example:
+- `python3 hashblaze.py --decrypt --hash b10a8db164e0754105b7a99be72e3fe5 --wordlist ./word.txt --oN export.txt`
 
 ## Disclaimer
 
