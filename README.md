@@ -34,6 +34,7 @@ To utilize HashBlaze, follow these steps:
 - `--compare`: Enter Compare Mode.
 - `--encrypt`: Enter Encrypt Mode.
 - `--decrypt`: Enter Decrypt Mode.
+- `--algorithm-list`: Show allowed algorithms.
 
 ### Common Options
 
@@ -97,6 +98,16 @@ Crack a hash using multiple processes and a specific word list. Use the -p optio
 
 Example:
 - `python3 hashblaze.py --decrypt --hash b10a8db164e0754105b7a99be72e3fe5 --wordlist ./word.txt --oN export.txt`
+
+## Algorithms Allowed
+
+- MD5 
+- SHA1
+- SHA224
+- SHA256
+- SHA384
+- SHA512
+
 
 ## Disclaimer
 
